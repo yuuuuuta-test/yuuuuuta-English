@@ -1,0 +1,94 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1080px;
+    margin: 0;
+}
+
+#app {
+    text-align: center;
+    background-color: #fff;
+    padding: 21.6px; /* 2vh → 2 * 10.8px */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1536px; /* 80vw → 80 * 19.2px */
+    height: 648px; /* 60vh → 60 * 10.8px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 96px; /* 5vw → 5 * 19.2px */
+    margin: 21.6px 0; /* 2vh → 2 * 10.8px */
+}
+
+h3 {
+    font-size: 57.6px; /* 3vw → 3 * 19.2px */
+    margin: 10.8px 0; /* 1vh → 1 * 10.8px */
+}
+
+#reveal-button, #next-button, #unknown-button, #start-button, #restart-button {
+    margin: 21.6px;
+    padding: 32.4px 115.2px; /* 3vh 6vw → 3 * 10.8px, 6 * 19.2px */
+    border: none;
+    border-radius: 16.2px; /* 1.5vh → 1.5 * 10.8px */
+    background-color: #4CAF50;
+    color: white;
+    font-size: 38.4px; /* 2vw → 2 * 19.2px */
+    cursor: pointer;
+}
+
+#reveal-button:hover, #next-button:hover, #unknown-button:hover, #start-button:hover, #restart-button:hover {
+    background-color: #45a049;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#review-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 12px; /* 1.2vh → 1.2 * 10.8px */
+    font-size: 38.4px; /* 2vw → 2 * 19.2px */
+    z-index: 1000;
+}
+
+#setup-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21.6px; /* 2vh → 2 * 10.8px */
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 38.4px; /* 2vw → 2 * 19.2px */
+    align-items: center;
+}
+
+#setup-screen label, #setup-screen input {
+    font-size: 38.4px; /* 2vw → 2 * 19.2px */
+}
+
+#start-button {
+    margin-top: 21.6px; /* 2vh → 2 * 10.8px */
+    font-size: 38.4px; /* 2vw → 2 * 19.2px */
+}
